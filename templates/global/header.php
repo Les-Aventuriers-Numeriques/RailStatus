@@ -65,8 +65,8 @@
       <div class="masthead">
         <h3 class="text-muted"><a href="<?php echo ROOT; ?>">RailStatus</a></h3>
         <ul class="nav nav-justified">
-          <li <?php echo ($active_nav_tab == 'visualiser') ? 'class="active"' : ''; ?>><a href="<?php echo ROOT ?>/"><i class="icon-eye-open"></i> Visualiser</a></li>
-          <li <?php echo ($active_nav_tab == 'editer') ? 'class="active"' : ''; ?>><a href="<?php echo ROOT ?>/editor"><i class="icon-pencil"></i> Editeur</a></li>
+          <li <?php echo ($active_nav_tab == 'visualiser') ? 'class="active"' : ''; ?>><a href="<?php echo ROOT ?>/"><i class="fa fa-eye"></i> Visualiser</a></li>
+          <li <?php echo ($active_nav_tab == 'editer') ? 'class="active"' : ''; ?>><a href="<?php echo ROOT ?>/editor"><i class="fa fa-pencil"></i> Editeur</a></li>
         </ul>
       </div>
       <?php

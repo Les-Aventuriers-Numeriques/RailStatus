@@ -27,27 +27,27 @@ div#current_pos {
 <div class="row">
   <div class="col-lg-2">
     <div>
-      <a href="#" id="action_load" class="btn btn-default btn-block"><i class="icon-folder-open"></i> Charger</a>
-      <a href="#" id="action_new" class="btn btn-default btn-block"><i class="icon-plus"></i> Nouvelle</a>
+      <a href="#" id="action_load" class="btn btn-default btn-block"><i class="fa fa-folder-open"></i> Charger</a>
+      <a href="#" id="action_new" class="btn btn-default btn-block"><i class="fa fa-plus"></i> Nouvelle</a>
       <?php if (!empty($selected_map)): ?>
-        <a href="#" id="action_rename" class="btn btn-default btn-block"><i class="icon-font"></i> Renommer</a>
-        <a href="#" id="action_delete" class="btn btn-danger btn-block"><i class="icon-trash"></i> Supprimer</a>
+        <a href="#" id="action_rename" class="btn btn-default btn-block"><i class="fa fa-font"></i> Renommer</a>
+        <a href="#" id="action_delete" class="btn btn-danger btn-block"><i class="fa fa-trash-o"></i> Supprimer</a>
       <?php endif; ?>
     </div>
   </div>
   <div class="col-lg-10">
     <?php if (!empty($selected_map)): ?>
     <ul class="nav nav-tabs">
-      <li class="active"><a href="#tabs-map" data-toggle="tab"><i class="icon-picture"></i> Carte</a></li>
-      <li><a href="#tabs-computers" data-toggle="tab"><i class="icon-hdd"></i> Ordinateurs</a></li>
+      <li class="active"><a href="#tabs-map" data-toggle="tab"><i class="fa fa-picture-o"></i> Carte</a></li>
+      <li><a href="#tabs-computers" data-toggle="tab"><i class="fa fa-hdd-o"></i> Ordinateurs</a></li>
     </ul>
 
     <div class="tab-content">
       <div class="tab-pane active" id="tabs-map">
         <div>
-          <a href="#" id="action_save" class="btn btn-primary"><i class="icon-save"></i> Enregistrer</a>
-          <a href="#" id="action_clear" class="btn btn-danger"><i class="icon-trash"></i> Effacer</a>
-          <a href="#" id="action_resize" class="btn btn-warning"><i class="icon-resize-full"></i> Redimensionner</a>
+          <a href="#" id="action_save" class="btn btn-primary"><i class="fa fa-save"></i> Enregistrer</a>
+          <a href="#" id="action_clear" class="btn btn-danger"><i class="fa fa-trash-o"></i> Effacer</a>
+          <a href="#" id="action_resize" class="btn btn-warning"><i class="fa fa-arrows"></i> Redimensionner</a>
         </div>
 
         <div id="current_pos">Position curseur : X: <span id="current_pos_x">0</span>, Y : <span id="current_pos_y">0</span></div>
@@ -246,7 +246,7 @@ div#current_pos {
       </div>
       <div class="tab-pane" id="tabs-computers">
           <div>
-            <a href="#" id="computer_action_new" class="btn btn-primary"><i class="icon-plus"></i> Nouveau</a>
+            <a href="#" id="computer_action_new" class="btn btn-primary"><i class="fa fa-plus"></i> Nouveau</a>
           </div>
 
         <table align="center" class="table table-striped table-hover " id="table_computers">
@@ -259,7 +259,7 @@ div#current_pos {
           <tr id="tr_computer_<?php echo $map_computer->id; ?>">
             <td><?php echo $map_computer->id; ?></td>
             <td><?php echo $map_computer->name; ?></td>
-            <td><a href="#" data-computer-id="<?php echo $map_computer->id; ?>" class="delete_computer btn btn-danger btn-sm"><i class="icon-trash"></i></a> <a href="#" data-computer-id="<?php echo $map_computer->id; ?>" class="edit_computer btn btn-default btn-sm"><i class="icon-pencil"></i></a></td>
+            <td><a href="#" data-computer-id="<?php echo $map_computer->id; ?>" class="delete_computer btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></a> <a href="#" data-computer-id="<?php echo $map_computer->id; ?>" class="edit_computer btn btn-default btn-sm"><i class="fa fa-pencil"></i></a></td>
           </tr>
         <?php endforeach; ?>
         </table>
@@ -293,7 +293,7 @@ div#current_pos {
 
                   jQuery.ajaxSetup({async:true});
 
-                  $('table#table_computers').append('<tr><td>'+computer.id+'</td><td>'+computer.name+'</td><td><a href="#" data-computer-id="'+computer.id+'" class="delete_computer btn btn-danger btn-sm"><i class="icon-trash"></i></a> <a href="#" data-computer-id="'+computer.id+'" class="edit_computer btn btn-default btn-sm"><i class="icon-pencil"></i></a></td></tr>');
+                  $('table#table_computers').append('<tr><td>'+computer.id+'</td><td>'+computer.name+'</td><td><a href="#" data-computer-id="'+computer.id+'" class="delete_computer btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></a> <a href="#" data-computer-id="'+computer.id+'" class="edit_computer btn btn-default btn-sm"><i class="fa fa-pencil"></i></a></td></tr>');
 
                   modal_dialog.modal('hide');
                 }

@@ -3,6 +3,10 @@ body {
   padding-bottom: 15px;
 }
 
+a:focus, input[type="button"]:focus {
+  outline: none;
+}
+
 .masthead {
   margin-bottom: 20px;
 }

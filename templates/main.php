@@ -12,7 +12,7 @@
   <div class="col-lg-3">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h3 class="panel-title"><i class="icon-hand-right"></i> Choisissez une carte</h3>
+        <h3 class="panel-title"><i class="fa fa-hand-o-right"></i> Choisissez une carte</h3>
       </div>
       <div class="panel-body">
         <div class="list-group">
@@ -26,7 +26,7 @@
   <div class="col-lg-9">
     <?php
     if (!empty($selected_map)): ?>
-    <p class="text-center"><button id="refresh" class="btn btn-primary"><i class="icon-repeat"></i> Actualiser</button></p>
+    <p class="text-center"><button id="refresh" class="btn btn-primary"><i class="fa fa-repeat"></i> Actualiser</button></p>
 
     <table id="map" align="center">
       <?php

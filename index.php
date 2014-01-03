@@ -3,7 +3,7 @@ session_start();
 
 switch ($_SERVER['SERVER_NAME']) {
   case 'localhost':
-    define('ROOT', 'http://localhost/railstatus');
+    define('ROOT', 'http://localhost/RailStatus');
   break;
   case 'railstatus.easy-company.fr':
     define('ROOT', 'http://railstatus.easy-company.fr');
