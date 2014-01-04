@@ -43,11 +43,13 @@
     .block.switch-top {
       background: #FF0000 url("<?php echo ROOT; ?>/img/block_rail_arrow.png") center center no-repeat;
       -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
     }
 
     .block.switch-bottom {
       background: #FF0000 url("<?php echo ROOT; ?>/img/block_rail_arrow.png") center center no-repeat;
       -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
 
     .block.switch-left {
@@ -57,6 +59,7 @@
     .block.switch-right {
       background: #FF0000 url("<?php echo ROOT; ?>/img/block_rail_arrow.png") center center no-repeat;
       -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
     </style>
   </head>

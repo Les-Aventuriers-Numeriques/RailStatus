@@ -42,12 +42,12 @@ $ab = array(
   ),
   'rail-top' => array(
     'name' => 'Rail (Haut)',
-    'style' => 'background: #BA8D15 url("'.ROOT.'/img/block_rail_arrow.png") center center no-repeat; -webkit-transform: rotate(90deg);',
+    'style' => 'background: #BA8D15 url("'.ROOT.'/img/block_rail_arrow.png") center center no-repeat; -webkit-transform: rotate(90deg); transform: rotate(90deg);',
     'options' => array()
   ),
   'rail-bottom' => array(
     'name' => 'Rail (Bas)',
-    'style' => 'background: #BA8D15 url("'.ROOT.'/img/block_rail_arrow.png") center center no-repeat; -webkit-transform: rotate(-90deg);',
+    'style' => 'background: #BA8D15 url("'.ROOT.'/img/block_rail_arrow.png") center center no-repeat; -webkit-transform: rotate(-90deg); transform: rotate(-90deg);',
     'options' => array()
   ),
   'rail-left' => array(
@@ -57,7 +57,7 @@ $ab = array(
   ),
   'rail-right' => array(
     'name' => 'Rail (Droite)',
-    'style' => 'background: #BA8D15 url("'.ROOT.'/img/block_rail_arrow.png") center center no-repeat; -webkit-transform: rotate(180deg);',
+    'style' => 'background: #BA8D15 url("'.ROOT.'/img/block_rail_arrow.png") center center no-repeat; -webkit-transform: rotate(180deg); transform: rotate(180deg);',
     'options' => array()
   ),
   'none' => array(
